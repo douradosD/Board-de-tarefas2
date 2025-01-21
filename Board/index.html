@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Board de Tarefas - DNC</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Jost:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <img src="/logo.svg" alt="DNC Logo" class="logo">
+
+        <div class="content-wrapper">
+            <div class="header">
+                <h1>Board<br>de tarefas</h1>
+                <span class="subtitle">desafio responsividade</span>
+            </div>
+
+            <form class="task-form" id="taskForm">
+                <div class="form-group">
+                    <input type="text" class="task-input" placeholder="Digite sua tarefa" required>
+                    <button type="submit" class="add-button">+</button>
+                </div>
+            </form>
+
+            <div class="task-list" id="taskList">
+                <!-- Tasks will be added here dynamically -->
+            </div>
+
+            <div class="task-counter" id="taskCounter">
+                0 tarefas concluídas
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
